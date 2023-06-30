@@ -1,12 +1,11 @@
 import { defineConfig } from 'vite';
 
 import {globSync} from 'glob';//ワイルドカードを使って各ファイルの名前を取得し一括で登録するため
-
 import path from 'node:path';//上記の実行次にnpmのpathを利用
 import { fileURLToPath } from 'node:url';//上記の実行時にURLをpathに変更させるため
 import liveReload from 'vite-plugin-live-reload';//Dev時のファイルリロード監視に任意のファイルを追加できるようにするため
 import { ViteEjsPlugin } from "vite-plugin-ejs";//EJS用プラグイン
-import json from "./src/pagedata/data.json";//EJSでのデータ（json）を読み込む
+
 
 //** ↓JS、SCSSなどの各ファイルの名称、path情報を配列に格納する設定 */
 const inputJsArray = globSync('src/**/*.js', { ignore:
@@ -80,6 +79,6 @@ export default defineConfig({
   },
   plugins: [
     liveReload(['components/**/*.ejs']),//開発サーバーのライブリロードに任意のファイルを追加する設定
-    ViteEjsPlugin(json),//ViteのEJSプラグインの設定
+    ViteEjsPlugin(),//ViteのEJSプラグインの設定
   ]
 });

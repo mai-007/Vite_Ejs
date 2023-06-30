@@ -1,69 +1,178 @@
-<!DOCTYPE html>
-<html xml:lang="ja" lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0"
-    />
-    <title>福岡の税理士 樋口税理士事務所・ゆとり会計トータルマネジメント</title>
-    <meta name="format-detection" content="telephone=no" />
-    <meta
-      name="description"
-      content="福岡で税理士をお探しなら、樋口税理士事務所にお任せください。インターネット会計で早期の月次決算書作成。簿記の知識がなくても大丈夫です。経営計画書作成で会社の夢を実現しませんか。記帳代行・その他税務に関する相談等、お気軽にご相談くださいませ。"
-    />
-    <meta
-      name="keywords"
-      content="樋口税理士事務所,税理士,税務,会社,経営計画書,経営計画,月次決算書,決算書,インターネット会計,新規開業,起業,記帳代行,福岡 "
-    />
-    <meta name="robots" content="index,follow" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/base.css" />
-    <link rel="stylesheet" type="text/css" href="css/common.css" />
-    <link rel="stylesheet" type="text/css" href="css/megamenu.css" />
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <script src="js/wideslider.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/wideslider.css" />
-    <script type="text/javascript" src="js/google.js"></script>
-    <script src="js/rollover.js"></script>
-    <script src="js/megamenu.js"></script>
-    <script type="text/javascript">
-      $(function () {
-        $(window).on("scroll", function () {
-          if ($(this).scrollTop() > 300) {
-            $("nav").addClass("fixed gmnu-aki");
-          } else {
-            $("nav").removeClass("fixed gmnu-aki");
-          }
-        });
-      });
-    </script>
-    <!--背景スライドショー-->
-    <script src="js/jquery.bgswitcher.js"></script>
-    <script>
-      jQuery(function ($) {
-        $(".bg-slider").bgSwitcher({
-          images: ["img/slide8.jpg", "img/slide2.jpg", "img/slide3.jpg"], // 切り替える背景画像を指定
-        });
-      });
-    </script>
-    <!--スクロール移動-->
-    <script src="js/scroll.js"></script>
-    <script type="text/javascript">
-      $(function () {
-        $("a[href^=#]").click(function () {
-          var speed = 500;
-          var href = $(this).attr("href");
-          var target = $(href == "#" || href == "" ? "html" : href);
-          var position = target.offset().top;
-          $("html, body").animate({ scrollTop: position }, speed, "swing");
-          return false;
-        });
-      });
-    </script>
-    <!--WEBフォント・NotoSansJP-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+<body>
+  <a id="top" name="#top"></a>
+  <!--ヘッダー-->
+  <header>
+    <section class="sec-h1">
+      <h1>
+        福岡 糟屋郡の樋口税理士事務所・ゆとり会計トータルマネジメント |
+        経営相談 新規開業 起業支援
+      </h1>
+    </section>
+
+    <div class="logo_title">
+      <a href="index.html"
+        ><img src="img/title1.gif" alt="樋口税理士事務所"
+      /></a>
+      <img
+        src="img/title2.gif"
+        alt="有限会社ゆとり会計トータルマネジメント"
+      />
+      <img src="img/iso9001-head.gif" alt="ISO9001認証取得" />
+    </div>
+
+    <ul class="head_tel">
+      <a href="tel:0929393439"
+        ><img src="img/top-tel.jpg" alt="電話番号" style="margin-top: 28px"
+      /></a>
+    </ul>
+  </header>
+  <!--ヘッダー-->
+
+  <!--グローバルメニュー-->
+  <nav class="menu" id="gloval">
+    <p class="top_rtn">
+      <a href="index.html">樋口税理士事務所 MENU</a
+      ><a href="tel:0929393439"><img src="img/icon-htel.png" /></a>
+    </p>
+    <ul>
+      <li>
+        <a href="index.html"
+          ><img src="img/gmenu_off_r2_c2.png" alt="ホーム"
+        /></a>
+      </li>
+
+      <li class="menu-dropdown-icon">
+        <img src="img/gmenu_off_r2_c6.png" alt="事務所のご案内" /><span
+          >事務所のご案内</span
+        >
+
+        <ul class="g1">
+          <li>
+            <a href="greeting.html"
+              ><img src="img/menup1.jpg" alt="ごあいさつ" />ごあいさつ</a
+            >
+          </li>
+          <li>
+            <a href="gaiyo.html"
+              ><img src="img/menup2.jpg" alt="事務所概要" />事務所概要</a
+            >
+          </li>
+          <li>
+            <a href="information.html"
+              ><img src="img/menup3.jpg" alt="業務案内" />業務案内</a
+            >
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-dropdown-icon">
+        <img src="img/gmenu_off_r2_c8.png" alt="業務サービス" /><span
+          >業務サービス</span
+        >
+
+        <ul class="g2">
+          <li>
+            <a href="kessan.html"
+              ><img src="img/menup4.jpg" alt="決算診断" />決算診断</a
+            >
+          </li>
+          <li>
+            <a href="keieiryoku.html"
+              ><img src="img/menup5.jpg" alt="経営力評価" />経営力評価</a
+            >
+          </li>
+          <li>
+            <a href="keikaku.html"
+              ><img src="img/menup6.jpg" alt="経営計画" />経営計画</a
+            >
+          </li>
+          <li>
+            <a href="shinki.html"
+              ><img
+                src="img/menup7.jpg"
+                alt="新規開業・起業支援"
+              />新規開業・起業支援</a
+            >
+          </li>
+          <li>
+            <a href="johoshien.html"
+              ><img
+                src="img/menup8.jpg"
+                alt="情報支援サービス"
+              />情報支援サービス</a
+            >
+          </li>
+          <li>
+            <a href="sogoshien.html"
+              ><img
+                src="img/menup9.jpg"
+                alt="経営総合支援サイト"
+              />経営総合支援サイト</a
+            >
+          </li>
+          <li>
+            <a href="jigyosyokei.html"
+              ><img src="img/menup10.jpg" alt="事業承継" />事業承継</a
+            >
+          </li>
+          <li>
+            <a href="etc.html"
+              ><img
+                src="img/menup11.jpg"
+                alt="その他各種業務"
+              />その他各種業務</a
+            >
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-dropdown-icon">
+        <img src="img/gmenu_off_r2_c10.png" /><span>ご相談について</span>
+
+        <ul class="g3">
+          <li>
+            <a href="soudan.html"
+              ><img src="img/menup12.jpg" alt="ご相談の流れ" />ご相談の流れ</a
+            >
+          </li>
+          <li>
+            <a href="qa.html"
+              ><img
+                src="img/menup13.jpg"
+                alt="よくあるご質問"
+              />よくあるご質問</a
+            >
+          </li>
+          <li>
+            <a href="voice.html"
+              ><img src="img/menup14.jpg" alt="お客様の声" />お客様の声</a
+            >
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-dropdown-icon">
+        <a href="access.html"
+          ><img src="img/gmenu_off_r2_c12.png" alt="交通アクセス" /><span
+            >交通アクセス</span
+          ></a
+        >
+      </li>
+
+      <li class="menu-dropdown-icon">
+        <%- include('topicsUrl') %>
+          <img src="img/gmenu_off_r2_c14.png" alt="今週のトピックス" />
+          <span>今週のトピックス</span>
+        </a>
+      </li>
+
+      <li class="menu-dropdown-icon">
+        <a href="contact.html"
+          ><img src="img/gmenu_off_r2_c16.png" alt="お問い合わせ" /><span
+            >お問い合わせ</span
+          ></a
+        >
+      </li>
+    </ul>
+  </nav>
+  <!--/グローバルメニュー-->
